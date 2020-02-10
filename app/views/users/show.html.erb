@@ -1,17 +1,17 @@
 <p id="notice"><%= notice %></p>
-
+<h1>X-Solar Tech</h1>
 <p>
-  <strong>Name:</strong>
+  <strong>Nome:</strong>
   <%= @user.name %>
 </p>
 
 <p>
-  <strong>Cpd:</strong>
+  <strong>Cpf:</strong>
   <%= @user.cpd %>
 </p>
 
 <p>
-  <strong>Phone:</strong>
+  <strong>Telefone:</strong>
   <%= @user.phone %>
 </p>
 
@@ -21,49 +21,49 @@
 </p>
 
 <p>
-  <strong>Zip:</strong>
+  <strong>Cep:</strong>
   <%= @user.zip %>
 </p>
 
 <p>
-  <strong>City:</strong>
+  <strong>Cidade:</strong>
   <%= @user.city %>
 </p>
 
 <p>
-  <strong>State:</strong>
+  <strong>Estado:</strong>
   <%= @user.state %>
 </p>
 
 <p>
-  <strong>Borough:</strong>
+  <strong>Bairro:</strong>
   <%= @user.borough %>
 </p>
 
 <p>
-  <strong>Street:</strong>
+  <strong>Rua:</strong>
   <%= @user.street %>
 </p>
 
 <p>
-  <strong>Number:</strong>
+  <strong>Número:</strong>
   <%= @user.number %>
 </p>
 
 <p>
-  <strong>Comp:</strong>
+  <strong>Complemento:</strong>
   <%= @user.comp %>
 </p>
 
 <p>
-  <strong>Tipos:</strong>
+  <strong>Tipos dos Imóveis:</strong>
   <%= @user.tipo %>
 </p>
 
 <p>
   <% @user.experiences.each_with_index do |exp, index| %>
     <br>
-    <h4>Endereço</h4>
+    <h4>Endereço:</h4>
     <strong>Cep:</strong>
     <%= exp.ziptwo %>
     <br>

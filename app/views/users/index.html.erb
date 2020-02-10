@@ -1,21 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Users</h1>
+<h1>X-Solar Tech</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Cpd</th>
-      <th>Phone</th>
+      <th>Nome</th>
+      <th>Cpf</th>
+      <th>Telefone</th>
       <th>Email</th>
-      <th>Zip</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Borough</th>
-      <th>Street</th>
-      <th>Number</th>
-      <th>Comp</th>
+      <th>Cep</th>
+      <th>Cidade</th>
+      <th>Estado</th>
+      <th>Bairro</th>
+      <th>Rua</th>
+      <th>Número</th>
+      <th>Complemento</th>
       <th>Tipo</th>
       <th colspan="3"></th>
     </tr>
@@ -36,9 +36,9 @@
         <td><%= user.number %></td>
         <td><%= user.comp %></td>
         <td><%= user.tipo %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', user %></td>
+        <td><%= link_to 'Editar', edit_user_path(user) %></td>
+        <td><%= link_to 'Excluir', user, method: :delete, data: { confirm: 'Voce deseja realmente excluir o registro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -46,4 +46,4 @@
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
+<%= link_to 'Novo Cliente', new_user_path %>
