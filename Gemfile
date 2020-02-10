@@ -52,5 +52,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "cocoon"
 gem 'jquery'
 gem 'jquery-rails', '~> 4.3.3'
+gem 'devise'
 
 
