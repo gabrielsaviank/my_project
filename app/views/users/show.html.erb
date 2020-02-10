@@ -1,0 +1,93 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Cpd:</strong>
+  <%= @user.cpd %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @user.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @user.zip %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @user.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @user.state %>
+</p>
+
+<p>
+  <strong>Borough:</strong>
+  <%= @user.borough %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @user.street %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @user.number %>
+</p>
+
+<p>
+  <strong>Comp:</strong>
+  <%= @user.comp %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @user.tipo %>
+</p>
+
+<p>
+  <% @user.experiences.each_with_index do |exp, index| %>
+    <br>
+    <strong>Cep:</strong>
+    <%= exp.ziptwo %>
+    <br>
+    <strong>Cidade:</strong>
+    <%= exp.citytwo %>
+    <br>
+    <strong>Estado:</strong>
+    <%= exp.statetwo %>
+    <br>
+    <strong>Bairro:</strong>
+    <%=exp.boroughtwo %>
+    <br>
+    <strong>Rua:</strong>
+    <%=exp.streetwo %>
+    <br>
+    <strong>Number:</strong>
+    <%=exp.numbertwo %>
+    <br>
+    <strong>Complemento:</strong>
+    <%= exp.comptwo %>
+    <br>
+    <strong>Tipo:</strong>
+    <%=exp.tipotwo %>
+  <% end %>
+</p>
+
+<%= link_to 'Editar', edit_user_path(@user) %> |
+<%= link_to 'Voltar', users_path %>

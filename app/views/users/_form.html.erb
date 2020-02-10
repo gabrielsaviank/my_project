@@ -1,0 +1,90 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name, 'Nome' %>
+    <%= form.text_field :name, id: :user_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cpd, 'Cpf'%>
+    <%= form.text_field :cpd, id: :user_cpd %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone, 'Telefone' %>
+    <%= form.text_field :phone, id: :user_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email, 'Email' %>
+    <%= form.text_field :email, id: :user_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zip, 'Cep' %>
+    <%= form.text_field :zip, id: :user_zip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city, 'Cidade' %>
+    <%= form.text_field :city, id: :user_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state, 'Estado' %>
+    <%= form.text_field :state, id: :user_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :borough, 'Bairro' %>
+    <%= form.text_field :borough, id: :user_borough %>
+  </div>
+
+  <div class="field">
+    <%= form.label :street, 'Rua' %>
+    <%= form.text_field :street, id: :user_street %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number, 'Numero' %>
+    <%= form.text_field :number, id: :user_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comp, 'Complemento' %>
+    <%= form.text_field :comp, id: :user_comp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo, 'Tipo' %>
+    <%= form.text_field :tipo, id: :user_tipo %>
+  </div>
+
+  <h4>Endereços</h4>
+
+  <div id="experiences">
+    <%= form.fields_for :experiences do |experience| %>
+      <%= render 'experience_fields', f: experience %>
+    <% end %>
+
+    <div class="links">
+      <%= link_to_add_association 'Adicionar Endereço', form, :experiences %>
+      <br><br>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Criar Cadastro' %>
+  </div>
+<% end %>
