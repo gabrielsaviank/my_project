@@ -1,24 +1,29 @@
-# README
+# X-Solar Repository
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+>This is a repository for the X-Solar Project< 
 
-Things you may want to cover:
+### Important INFOS: 
 
-* Ruby version
+* Ruby Version 
+_2.4.0.0_ 
 
-* System dependencies
+* Rails Version 
+_5.1.7_
 
-* Configuration
+* Database 
+_Postgresql_
 
-* Database creation
+### Gems: 
 
-* Database initialization
+_Scaffold_ 
 
-* How to run the test suite
+_Cocoon_ 
 
-* Services (job queues, cache servers, search engines, etc.)
+_Devise_ 
 
-* Deployment instructions
+_Petergate_ 
 
-* ...
+#### Other 
+
+>Beware with the jquery in this version of ruby if not correctly installed will have some issues when generating a newer nested model< 
+
