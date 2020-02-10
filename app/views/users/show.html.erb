@@ -56,13 +56,14 @@
 </p>
 
 <p>
-  <strong>Tipo:</strong>
+  <strong>Tipos:</strong>
   <%= @user.tipo %>
 </p>
 
 <p>
   <% @user.experiences.each_with_index do |exp, index| %>
     <br>
+    <h4>Endereço</h4>
     <strong>Cep:</strong>
     <%= exp.ziptwo %>
     <br>
@@ -84,8 +85,6 @@
     <strong>Complemento:</strong>
     <%= exp.comptwo %>
     <br>
-    <strong>Tipo:</strong>
-    <%=exp.tipotwo %>
   <% end %>
 </p>
 

@@ -35,8 +35,18 @@
   </div>
 
   <div class="field">
-    <%= f.label :tipotwo, 'Tipo' %>
-    <%= f.text_field :tipotwo %>
+    <h4>Tipo de Estabelecimento:</h4>
+    <%= label_tag 'tipo_comercial', 'Comercial' %>
+    <%= check_box_tag 'user[tipo][]', 'Comercial', checked('Comercial'), id: 'tipo_comercial' %>
+
+    <%= label_tag 'tipo_residencial', 'Residencial' %>
+    <%= check_box_tag 'user[tipo][]', 'Residencial', checked('Residencial'), id: 'tipo_residencial' %>
+
+    <%= label_tag 'tipo_rural', 'Rural' %>
+    <%= check_box_tag 'user[tipo][]', 'Rural', checked('Rural'), id: 'tipo_rural' %>
+
+    <%= label_tag 'tipo_casa', 'Casa de Praia' %>
+    <%= check_box_tag 'user[tipo][]', 'Casa de Praia', checked('Casa de Praia'), id: 'tipo_casa' %>
   </div>
 
   <%= link_to_remove_association 'Remover Endereço', f %>

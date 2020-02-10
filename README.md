@@ -1,6 +1,6 @@
 # X-Solar Repository
 
->This is a repository for the X-Solar Project< 
+>This is a repository for the X-Solar Project
 
 ### Important INFOS: 
 
@@ -25,5 +25,5 @@ _Petergate_
 
 #### Other 
 
->Beware with the jquery in this version of ruby if not correctly installed will have some issues when generating a newer nested model< 
+>Beware with the jquery in this version of ruby if not correctly installed will have some issues when generating a newer nested model
 
